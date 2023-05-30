@@ -1,11 +1,45 @@
 /* Navbar */
-.my-nav{
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px); 
-    z-index: 999;
+.my-nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 999;
 }
 
 /* Body */
-.my-dark-body{
-    background-color: black;
+.my-dark-body {
+  background-color: black;
 }
+/* Body */
+
+/* Landing Video */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* backdrop-filter: blur(2px); */
+}
+
+.overlay .text {
+  color: #fff;
+  padding: 20px;
+}
+/* Landing Video*/
