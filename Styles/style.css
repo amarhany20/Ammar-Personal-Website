@@ -5,6 +5,8 @@
 
 }
 
+/* Centering Navbar for phone */
+
 .navbar .navbar-collapse {
   text-align: center;
 }
@@ -14,21 +16,19 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top:5px
+    top: 5px
   }
-  .navbar-toggler{
+
+  .navbar-toggler {
     margin-left: auto;
   }
 }
 
+/* Centering Navbar for phone */
+
 /* Body */
+
 .my-body {
-  /* background-image: url("/Resources/Images/background-img.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; */
-  /* background-color: black; */
-  /* background: rgb(0, 0, 0); */
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(5, 0, 25, 1) 100%);
 
   /* padding-top: 70px; */
@@ -37,6 +37,7 @@
 /* Body */
 
 /* Landing Video */
+
 .video-container {
   position: fixed;
   width: 100%;
@@ -61,6 +62,7 @@
 /* Gradient Text */
 
 /* My Table */
+
 .my-table tbody tr {
   line-height: 3em;
 
