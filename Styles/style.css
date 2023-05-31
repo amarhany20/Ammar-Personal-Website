@@ -1,96 +1,68 @@
 /* Navbar */
 .my-nav {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgb(0, 9, 26,0.5) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(5, 0, 25, 1) 100%);
   backdrop-filter: blur(2px);
-  
-  /* z-index: 999; */
+
 }
 
 /* Body */
-.my-dark-body {
+.my-body {
   /* background-image: url("/Resources/Images/background-img.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; */
   /* background-color: black; */
   /* background: rgb(0, 0, 0); */
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(0, 9, 26) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(5, 0, 25, 1) 100%);
+
+  /* padding-top: 70px; */
 }
+
 /* Body */
 
 /* Landing Video */
 .video-container {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  /* box-shadow: inset 0 0 100px 5px rgb(0, 9, 26),
-    inset 0 0px 100px 20px rgb(0, 0, 0); */
-
-  /* border: 10px solid;
-  border-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgb(0, 9, 26)) 1;
-  border-left: none;
-  border-top: none;
-  border-right: none; */
-}
-
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  opacity: 20%;
+  z-index: -1;
+  opacity: 10%;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.75); */
-  backdrop-filter: blur(2px);
-  /* background: rgb(0, 0, 0); */
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 9, 26, 0.5) 100%);
-}
-
-.overlay .text {
-  /* color: #fff; */
-  /* padding: 20px; */
-}
 /* Landing Video*/
 
 /* Gradient Text */
+
 .gradient-text {
-  /* font-size: 72px; */
-  /* background: #ffffff; */
-  background: linear-gradient(to top right, #ffffff 0%, #9cb8ff 100%);
+  background: linear-gradient(to top right, #ffffff 0%, rgb(160, 168, 255) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 /* Gradient Text */
-/*  */
 
-/* Optimizing picture for non lg screens  */
-/* @media screen and (max-width: 992px){
-  .image-optimize-lg{
-    margin-top: 500;
-  }
-}
-@media screen and (max-width: 576px){
-  .image-optimize-lg{
-    margin-top: 100vw;
-  }
-}
-@media screen and (max-width: 350px){
-  .image-optimize-lg{
-    margin-top: 100vw;
-  }
-} */
+/* My Table */
+.my-table tbody tr {
+  line-height: 3em;
 
-  body {
-    padding-top: 70px;
-  }
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  background-image: linear-gradient(to top right, #ffffff 50%, rgb(160, 168, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 100%;
+  background-position: top left;
+}
+
+.my-table tbody tr:hover {
+  background-position: top left 100%;
+}
+
+/* My Table */
