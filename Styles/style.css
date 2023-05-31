@@ -1,8 +1,24 @@
 /* Navbar */
 .my-nav {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(5, 0, 25, 1) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(5, 0, 25, 0.5) 100%);
   backdrop-filter: blur(2px);
 
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:5px
+  }
+  .navbar-toggler{
+    margin-left: auto;
+  }
 }
 
 /* Body */
