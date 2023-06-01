@@ -68,6 +68,7 @@
   -o-transition: all 0.3s ease-in-out;
   color: #ffffff;
   background-image: linear-gradient(to top right, #ffffff 50%, rgb(160, 168, 255) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 100%;
