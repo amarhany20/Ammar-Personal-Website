@@ -1,4 +1,4 @@
-var cvLink = "./Resources//Resume/Ammar Hany Cv 2023.pdf";
+var cvLink = "../Resources//Resume/Ammar Hany CV 2024 V1.1.pdf";
 var portfolioLink = "../Pages/projects.html";
 var linkedinLink = "https://www.linkedin.com/in/ammar-hany/";
 var githubLink = "https://github.com/amarhany20";
