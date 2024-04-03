@@ -1,11 +1,11 @@
-/* Navbar */
+/* ! Navbar */
 .my-nav {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(5, 0, 25, 0.5) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgb(7, 2, 31) 100%);
   backdrop-filter: blur(2px);
 
 }
 
-/* Centering Navbar for phone */
+/* ! Centering Navbar for phone */
 
 .navbar .navbar-collapse {
   text-align: center;
@@ -25,15 +25,15 @@
 }
 
 
-/* Body */
+/* ! Body */
 
 .my-body {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(5, 0, 25, 1) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(7, 2, 31) 100%);
 
   /* padding-top: 70px; */
 }
 
-/* Landing Video */
+/* ! Landing Video */
 
 .video-container {
   position: fixed;
@@ -42,24 +42,24 @@
   overflow: hidden;
   object-fit: cover;
   z-index: -1;
-  opacity: 15%;
+  opacity: 5%;
 }
 
 
-/* Gradient Text */
+/* ! Gradient Text */
 
 .gradient-text {
-  background: linear-gradient(to top right, #ffffff 0%, rgb(160, 168, 255) 100%);
+  background: linear-gradient(to top right, #ffffff 0%, rgb(164, 171, 255) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 
-/* My Table */
+/* ! My Table */
 
 .my-table tbody tr {
-  line-height: 3em;
+  line-height: 2em;
 
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -67,12 +67,13 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   color: #ffffff;
-  background-image: linear-gradient(to top right, #ffffff 50%, rgb(160, 168, 255) 100%);
+  background-image: linear-gradient(to top right, #ffffff 50%, rgb(164, 171, 255) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 100%;
   background-position: top left;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .my-table tbody tr:hover {
