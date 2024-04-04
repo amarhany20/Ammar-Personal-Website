@@ -30,7 +30,7 @@
 <!-- ! Body Start -->
 
 <body class="my-body">
-    <!-- Navbar Section -->
+    <!-- ! Navbar Start -->
     <nav class="navbar my-nav navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <!-- ! Navbar Brand Name -->
@@ -109,266 +109,784 @@
             </ul> -->
         </div>
     </nav>
-    <!-- Navbar Section -->
-    <!-- Background -->
+    <!-- ! Navbar End -->
+    <!-- ! Video BG -->
     <video class="video-container" autoplay muted loop>
         <source src="../Resources/Videos/Background-Video-1.mp4" type="video/mp4">
     </video>
-    <!-- Background -->
-    <!-- Main Content -->
 
-    <!-- Projects -->
 
     <main>
-        <div class="container text-light text-lg-start text-center">
-            <div class="my-projects mt-5">
-                <h1 class="mb-4">Projects</h1>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        Animal Behavior Detector
-                    </h3>
+        <!-- ! Project Section Start -->
+        <section id="projects">
+
+            <div class="container text-light text-lg-start text-center">
+                <!-- ! Projects Headline -->
+                <div class="my-projects mt-5">
+                    <h1 class="mb-4">Projects</h1>
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            Animals.ai Farm-Api
+                        </h3>
+                        <!-- ! Project Subtitle -->
+                        <h5>Programming Languages: <strong>Python</strong></h5>
+                        <h5>Database: Firebase, Google Storage</h5>
+                        <br>
+                        <h5 class="d-inline">Libraries:</h5> Flask, Flask-RestX, Flask-Limiter, python-dotenv,
+                        pytz,
+                        requests, google,
+                        google-cloud-logging,
+                        google-cloud-storage, gunicorn, PyJWT, jose, google-cloud-firestore, Flask-HTTPAuth, os, json,
+                        random, hashlib, datetime
+                        <p class="text-justify">
+                            <br>
+                            The farm-api project is a robust RESTful API developed using Python Flask and deployed on
+                            Google
+                            Cloud Run. Leveraging
+                            Google Cloud Firestore and Google Storage Buckets for database storage, this API serves as a
+                            crucial backend component
+                            for storing data collected from Nvidia Jetson Devices deployed in farms. Two layers of
+                            authentication, including
+                            Token-based and Basic Authentication, ensure maximum security. Additionally, the
+                            implementation
+                            of DDOS protection with
+                            both Limiter and Google's security measures fortifies the API against potential threats.
+                            Built
+                            with a focus on
+                            scalability and efficiency, the project utilizes environment variables (.ENV) for seamless
+                            deployment across different
+                            farm locations, with automatic endpoint activation based on subscription status. A key
+                            feature
+                            of the project is its
+                            impeccable reliability and debugging capabilities, facilitated by integration with Google
+                            Logging API for real-time
+                            monitoring and error tracking. Continuous updates and deployment across all farms are
+                            automated
+                            through Docker, Google
+                            Artifact Registry, and GitHub integration. The project's core functionality revolves around
+                            receiving, sorting,
+                            validating, and storing JSONs and images, preparing them for seamless integration with
+                            front-end
+                            applications.
+                        </p>
+                        <hr class="w-50 mx-auto mb-4">
+                        <!-- ! Images -->
+                        <div class="row ">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-fluid h-auto" style="max-height: 640px; padding: 0 30px;"
+                                    src="../Resources/Projects Data/Animals.ai Farm-Api Structure.png" alt="">
+
+                            </div>
+                            <div class="col-lg-8 text-center">
+                                <img class="img-fluid" src="../Resources/Projects Data/Animals.ai Farm-Api Swagger.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            Animals.ai Farm-Estrus-Id-Score
+                        </h3>
+                        <!-- ! Project Subtitle -->
+                        <h5>Programming Languages: <strong>Python</strong></h5>
+                        <br>
+                        <h5 class="d-inline">Libraries:</h5> Flask, Flask_Cors, numpy, opencv_contrib_python,
+                        opencv_python, pandas,
+                        python-decouple, pytz, Requests, supervision, ultralytics, google-cloud-storage, gunicorn, dill,
+                        python-dotenv, os, json,
+                        random, hashlib, datetime
+                        <!-- ! Project Description -->
+                        <p class="text-justify">
+
+                            <br>
+                            The farm-estrus-id-score project, developed in collaboration with a colleague, is a RESTful
+                            API
+                            designed to process
+                            data and apply an ID Multi-Model. The ID Multi-Model, trained using Ultralytics YOLOv8,
+                            detects
+                            specific features
+                            within the data. Subsequently, a scoring function evaluates the accuracy of the detections,
+                            contributed by my
+                            colleague. Leveraging Google Logging API for real-time monitoring, the project dynamically
+                            filters
+                            confidence levels
+                            and selects the appropriate ID Model for processing. The processed data is then posted back
+                            to
+                            the
+                            Farm-API.
+                            Engineered for cost-efficiency and scalability, the project is optimized for deployment on
+                            Google
+                            Cloud Run, with
+                            data storage managed through Google Cloud Buckets. Notably, all aspects of ID Model
+                            training,
+                            data
+                            preparation,
+                            training, downloading, testing, and validation were meticulously handled by myself.
+                        </p>
+
+                        <!-- <hr class="w-50 mx-auto mb-4"> -->
+                        <!-- ! Images -->
+                        <!-- <div class="row ">
+                        <div class="col-lg-4 text-center">
+                            <img class="img-fluid" src="" alt="">
+                        </div>
+                        <div class="col-lg-8 text-center">
+                            <img class="img-fluid" src="" alt="">
+                        </div>
+                    </div> -->
+                    </div>
+
+                    <hr>
+
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            Animals.ai Farm-estrus-Jetson
+                        </h3>
+                        <!-- ! Project Subtitle -->
+                        <h5>Programming Languages: <strong>Python</strong></h5>
+                        <h5>Database: Firebase, Google Storage</h5>
+                        <br>
+                        <h5 class="d-inline">Libraries:</h5> CV2, ultralytics, supervision, numpy, PyJWT, Requests,
+                        os, json, random,
+                        hashlib, datetime, pytz, threading, FFMPEG, GStreamer
+                        <!-- ! Project Description -->
+                        <p class="text-justify">
+
+                            <br>
+                            The Farm-estrus-Jetson project is a Python-based application designed to run an AI Estrus
+                            Alert
+                            system on Jetson
+                            devices. Engineered for performance optimization, the multithreaded app efficiently connects
+                            to
+                            multiple cameras via
+                            RTSP and initiates predictions for each camera. Upon detecting any alerts, the system posts
+                            them
+                            to the Farm-API.
+                            Leveraging CUDA for hardware acceleration and GStreamer for hardware-accelerated OpenCV
+                            capture,
+                            the project ensures
+                            maximum performance. Additionally, Opencv was compiled on Jetson using CMake for enhanced
+                            efficiency. The AI model,
+                            based on YOLOv8, was retrained and prepared from YOLOv2 by myself. It features dynamic
+                            confidence capabilities,
+                            allowing each camera to have its own confidence limit for better real-life deployment and
+                            improved results.
+                        </p>
+
+                        <!-- <hr class="w-50 mx-auto mb-4"> -->
+                        <!-- ! Images -->
+                        <!-- <div class="row ">
+                            <div class="col-lg-6 text-center m-auto">
+                                <img class="img-fluid"
+                                    src="../Resources/Projects Data/Animals.ai Farm-Estrus-Jetson Detection.jpg" alt="">
+                            </div>
+                            <div class="col-lg-6 text-center m-auto">
+                                <img class="img-fluid"
+                                    src="../Resources/Projects Data/Animals.ai Farm-Estrus-Jetson Live Run.png" alt="">
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <hr>
+
+
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            Animals.ai IoT Gate
+                        </h3>
+                        <!-- ! Project Subtitle -->
+                        <h5>Programming Languages: <strong>Python</strong></h5>
+                        <br>
+                        <h5 class="d-inline">Libraries:</h5> time, PySerial, datetime, pytz, OpenCV2, threading, os
+                        <!-- ! Project Description -->
+                        <p class="text-justify">
+
+                            <br>
+                            The animals.ai IOT Gate application is an IoT app designed for deployment in farms,
+                            specifically
+                            supporting EU RFID
+                            Tag Readers for automatically reading each cow's European ID. This versatile app is
+                            compatible
+                            with both RTSP and
+                            USB cameras, offering support for Linux and Windows platforms, including Jetson devices and
+                            industry computers. It
+                            seamlessly decodes real-time data from the RFID Gate and retrieves the cow's tag using
+                            PySerial.
+                            Leveraging
+                            multithreading, the app efficiently connects to multiple cameras. It serves as a data
+                            collection
+                            tool for AI and
+                            computer vision models and features an automated data storage system. Additionally, the app
+                            supports CUDA hardware
+                            acceleration on GStreamer for enhanced performance.
+                        </p>
+
+                        <hr class="w-50 mx-auto mb-4">
+                        <!-- ! Images -->
+                        <div class="text-center">
+                            <img class="img-fluid w-75 m-auto"
+                                src="../Resources/Projects Data/animals.ai IoT Gate Filtered.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            Animals.ai Data Checker
+                        </h3>
+                        <!-- ! Project Description -->
+                        <p class="text-justify">
+                        <h5>Programming Languages: <strong>Python</strong></h5>
+                        <br>
+                        <h5 class="d-inline">Libraries:</h5> glob, CV2, ultralytics, supervision, numpy, os,
+                        shutil,
+                        datetime, pytz
+                        <br>
+                        <br>
+                        The Animals.ai Data Checker application is designed to complement the Animals.ai IoT Gate. It
+                        automatically
+                        processes a folder system containing videos, extracting frames and initiating a filtration
+                        process using AI. The
+                        filtration process removes blurred images and images with cropped objects, extracting the
+                        required objects.
+                        Subsequently, the application prepares these objects into a dataset with specified IDs and XYXYs
+                        automatically. This
+                        project streamlines the process of obtaining cow data and automatically prepares training
+                        datasets for ID training.
+                        </p>
+
+                        <!-- <hr class="w-50 mx-auto mb-4"> -->
+                        <!-- ! Images -->
+                        <!-- <div class="row ">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-fluid" src="" alt="">
+                            </div>
+                            <div class="col-lg-8 text-center">
+                                <img class="img-fluid" src="" alt="">
+                            </div>
+                        </div>-->
+                    </div>
+
+                    <hr>
+
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            All Computer Vision AI Helper Modules for
+                        </h3>
+                        <!-- ! Project Subtitle -->
+                        <h5>Programming Languages: <strong>Python</strong></h5>
+                        <br>
+                        <h5 class="d-inline">Libraries:</h5> glob, shutil, os, cv2, PIL, datetime, pytz, numpy,
+                        ultralytics,
+                        supervision, pandas, moviepy, tkinter, json, yaml, random
+                        <!-- ! Project Description -->
+                        <p class="text-justify">
+
+                            <br>
+                            The Animals.ai All Computer Vision AI application is a comprehensive tool for training
+                            computer
+                            vision models using
+                            Ultralytics YoloV8. It encompasses various functionalities such as data augmentation
+                            algorithms,
+                            dataset preparations,
+                            YAML handling, data filtration, and model testing. The application features automated
+                            augmentations including cropping
+                            XYXY, grayscale, lower quality, and rotating images. It also includes dataset preparation
+                            functions for generating YAML
+                            and sorting captured data into Yolo training datasets. Additionally, the application offers
+                            training functions and
+                            models, as well as testing models and demos.
+                        </p>
+
+                        <hr class="w-50 mx-auto mb-4">
+                        <!-- ! Images -->
+                        <div class="text-center">
+                            <img class="img-fluid" style="max-height: 600px;"
+                                src="../Resources/Projects Data/Animals.ai All CV Ai.png" alt="">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            Animals.ai AI Analysis App
+                        </h3>
+                        <!-- ! Project Subtitle -->
+                        <h5>Programming Languages: <strong>Python</strong></h5>
+                        <br>
+                        <h5 class="d-inline">Libraries:</h5> tkinter, PIL, pandas, os, requests, io, glob, random,
+                        datetime, json,
+                        pytz, google.cloud
+                        <br>
+                        <!-- ! Project Description -->
+                        <p class="text-justify">
+                            <br>
+                            The Validation and Analysis Tool for ID Models is a comprehensive Python application with a
+                            graphical user interface
+                            (GUI). This app is designed for validating the accuracy of ID models through user testing.
+                            It fetches data from databases stored in buckets and Firestore, converts the data into an
+                            Excel
+                            file, and allows
+                            users to select specific days for analysis.
+                            The app then processes the data from the Excel file and connects it to the GUI. The GUI
+                            displays
+                            images and crops
+                            each part of the image for detection, prompting the user to validate the results.
+                            After user validation, the app updates the Excel file, and further analysis, including
+                            percentage calculations, can
+                            be performed using Microsoft Excel for marketing teams.
+                        </p>
+
+                        <hr class="w-50 mx-auto mb-4">
+                        <!-- ! Images -->
+                        <div class="row ">
+                            <div class="col-lg-6 text-center">
+                                <img class="img-fluid"
+                                    src="../Resources/Projects Data/Animals.ai AI Analysis App Excel.png" alt="">
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                <img class="img-fluid"
+                                    src="../Resources/Projects Data/Animals.ai Analysis Application.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+
+
+                    <!-- <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            Animal Behavior Detector
+                        </h3> -->
 
                     <!-- <a href="https://github.com/amarhany20/Teknofest-Autonomous-Harvesting-Robot-Computer-Vision-Backend"><i class="bi bi-github text-light" style="font-size: 2em;"></i></a> -->
 
-                    <p class="text-justify">
+                    <!-- <p class="text-justify">
+                            <br>
+                            A Computer Vision Project made during my employment at Animals.AI. <br> This project
+                            contains
+                            gathering and collecting data from hundreds of videos. Preparing data. Preprocessing
+                            Data.
+                            Training Model. Validating Model. Testing Model. Deploying model for real life and
+                            preparing
+                            some tasks with detection
+                        </p>
+
+
+                    </div>
+                    <hr> -->
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            Live Object Counter
+                        </h3>
+                        <!-- ! Project Description -->
+                        <p class="text-justify">
+                        <h5>Programming Language: <strong>Python</strong></h5>
+                        <h5>Libraries: <strong>Opencv, Ultralytics, Supervision</strong></h5>
                         <br>
-                        A Computer Vision Project made during my employment at Animals.AI. <br> This project contains
-                        gathering and collecting data from hundreds of videos. Preparing data. Preprocessing Data.
-                        Training Model. Validating Model. Testing Model. Deploying model for real life and preparing
-                        some tasks with detection
-                    </p>
+                        The Live Object Counter is a computer vision project developed during my internship at
+                        Animals.AI.
+                        It utilizes Python programming language along with OpenCV, Ultralytics, and Supervision
+                        libraries.
+                        The project's main objective is to count and annotate objects in real-time using YOLOv8 object
+                        detection model.
+                        It is designed to connect to live RTSP cameras, detect entities at each entrance and exit, and
+                        send the data to the
+                        cloud for further processing.
+                        Additionally, I optimized the project for efficiency to ensure smooth operation on Jetson
+                        devices.
+                        </p>
+
+                        <!-- <hr class="w-50 mx-auto mb-4"> -->
+                        <!-- ! Images -->
+                        <!-- <div class="row ">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-fluid" src="" alt="">
+                            </div>
+                            <div class="col-lg-8 text-center">
+                                <img class="img-fluid" src="" alt="">
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <hr>
+
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            Teknofest 2023 Contest Computer Vision Project
+                        </h3>
+                        <h5>Programming Language: Python</h5>
+                        <h5>Libraries: Ultralyicts, Opencv</h5>
+                        <a
+                            href="https://github.com/amarhany20/Teknofest-Autonomous-Harvesting-Robot-Computer-Vision-Backend"><i
+                                class="bi bi-github text-light" style="font-size: 2em;"></i></a>
+
+                        <p class="text-justify">
+                            <br>
+                            A Computer Vision Project made in collaboration with Toros University's Smart Lab for
+                            the
+                            <span class="fw-bold  fs-6 text-decoration-underline">Teknofest Contest</span> which is
+                            one
+                            of the
+                            biggest technology contests in the world and was attended by 2.5 million visitors. The
+                            project
+                            won the 25th rank. The project was about an Autonomous Harvesting Robot which harvests
+                            fruits
+                            and vegetables from the ground. I built the computer vision model and connected it to
+                            the
+                            front-end using <span class="fw-bold  fs-6 text-decoration-underline">Flask</span>. I
+                            used
+                            <span class="fw-bold  fs-6 text-decoration-underline">Pytorch</span> library using the
+                            <span class="fw-bold  fs-6 text-decoration-underline">YOLOV8</span> Model. The
+                            programming
+                            language was Python.
+                        </p>
+
+
+                    </div>
+                    <hr>
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            Self-Driving Car Using Behavioural Cloning
+                        </h3>
+                        <h5>Programming Language: Python</h5>
+                        <h5>Libraries: Tensorflow.Keras</h5>
+
+                        <a href="https://github.com/amarhany20/Private-Self-Driving-Car"><i
+                                class="bi bi-github text-light" style="font-size: 2em;"></i></a>
+
+                        <p class="text-justify">
+                            <br>
+                            A Machine Learning project built in <span
+                                class="fw-bold  fs-6 text-decoration-underline">python</span>. It is about driving a
+                            car
+                            manually to generate my dataset. Then I train my model using <span
+                                class="fw-bold  fs-6 text-decoration-underline">Deep learning and Convolutional
+                                Neural
+                                Network</span>. Using that model, the car can drive on its own without any crashes.
+                            I
+                            used
+                            <span class="fw-bold  fs-6 text-decoration-underline">Udacity</span> Car Simulation as
+                            my
+                            simulator.
+                        </p>
+
+
+                    </div>
+                    <hr>
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            Engineering Firm Website
+                        </h3>
+                        <h5>Programming Language: HTML, CSS, JS and PHP </h5>
+                        <h5>Database: MYSQL</h5>
+                        <h5>Framework: Laravel 9 and Bootstrap</h5>
+
+                        <a href="https://github.com/amarhany20/laravel-CompanyWebsiteVersion2"><i
+                                class="bi bi-github text-light" style="font-size: 2em;"></i></a>
+
+                        <p class="text-justify">
+                            <br>
+                            For showing projects linked to an engineering firm. Includes an admin area for managing
+                            all
+                            projects and other admins. Built with <span
+                                class="fw-bold fs-6 text-decoration-underline">HTML,
+                                CSS, JS, Bootstrap and PHP Laravel 9</span>
+                        </p>
+
+
+                    </div>
+                    <hr>
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            Real Estate Website
+                        </h3>
+                        <h5>Programming Language: Javascript Wix Velo</h5>
+
+                        <!-- <a href="github"><i class="bi bi-github text-light" style="font-size: 2em;"></i></a> -->
+
+                        <p class="text-justify">
+                            <br>
+                            SEO Friendly Multilingual Website for showing newly built buildings in UAE With
+                            objective of
+                            getting leads from buyers. Includes features like sending leads through email. Built
+                            with
+                            CMS,
+                            JavaScript, and WIX Velo
+                        </p>
+
+
+                    </div>
+                    <hr>
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            IStone Company Software
+                        </h3>
+                        <h5>Programming Language: C#, XAML</h5>
+                        <h5>Framework: WPF</h5>
+                        <h5>Database: MSSQL</h5>
+
+                        <a href="https://github.com/amarhany20/IStone-Company-Management"><i
+                                class="bi bi-github text-light" style="font-size: 2em;"></i></a>
+
+                        <p class="text-justify">
+                            <br>
+                            Built with C# WPF using MSSQL as a server database. Role Based windows application for
+                            managing
+                            customers, tracking work status, inventory, and payment. Includes an authorization
+                            system
+                            for
+                            employees and managers and owner.
+                        </p>
+
+
+                    </div>
+                    <hr>
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            Inventory System
+                        </h3>
+                        <!-- ! Project Description -->
+                        <p class="text-justify">
+                        <h5>Programming Language: <strong>C#, XAML</strong></h5>
+                        <h5>Database: <strong>SQLite</strong></h5>
+                        <h5>Framework: <strong>WPF</strong></h5>
+                        <br>
+                        The Inventory System is a desktop application built using C# and XAML on the WPF framework.
+                        It is designed for organizations to efficiently manage their inventory.
+                        The app features a user-based login system, ensuring that each user has access to their own
+                        inventory database.
+                        Users can add, remove, or edit items in their inventory, as well as track the history of
+                        inventory changes including
+                        quantity adjustments.
+                        The system supports server deployment, allowing multiple users to access it simultaneously.
+                        Security measures such as DDOS protection and comprehensive logging of system activities are
+                        implemented to ensure
+                        data integrity.
+                        Additionally, the application supports automatic deployment and database building, providing a
+                        hassle-free setup and
+                        run experience.
+                        The Inventory System is specifically developed for Windows platforms.
+                        </p>
+
+                        <!-- <hr class="w-50 mx-auto mb-4"> -->
+                        <!-- ! Images -->
+                        <!-- <div class="row ">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-fluid" src="" alt="">
+                            </div>
+                            <div class="col-lg-8 text-center">
+                                <img class="img-fluid" src="" alt="">
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <hr>
+
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            Web Crawler
+                        </h3>
+                        <h5>Programming Language: C#, XAML</h5>
+                        <h5>Framework: WPF</h5>
+                        <h5>Database: MSSQL</h5>
+                        <a href="https://github.com/amarhany20/Private-Self-Driving-Car"><i
+                                class="bi bi-github text-light" style="font-size: 2em;"></i></a>
+
+                        <p class="text-justify">
+                            <br>
+                            Built with C# WPF using MSSQL with full focus on OOB programming. A robust web crawler
+                            that
+                            crawls a website and gets all the <a> anchor links from the html.
+                        </p>
+
+
+                    </div>
+                    <hr>
+                    <!-- ! My Project -->
+                    <div class="my-project my-4">
+                        <!-- ! Project Title -->
+                        <h3 class=" mb-4 gradient-text">
+                            Notes App
+                        </h3>
+                        <!-- ! Project Description -->
+                        <p class="text-justify">
+                        <h5>Language: <strong>C#, XAML</strong></h5>
+                        <h5>Framework: <strong>WPF</strong></h5>
+                        <h5>Database: <strong>SQL</strong></h5>
+                        <br>
+                        The Notes App is a desktop application built using C# and XAML on the WPF framework. It is
+                        designed for taking notes
+                        and storing them in a SQL database.
+                        The app supports real-time note searching, editing, and deleting functionalities. It is also
+                        login-based, ensuring
+                        that each user has their own set of notes.
+                        Built with object-oriented principles, the app is fast and supports background threading for
+                        efficient performance.
+                        Additionally, extensive validation rules are implemented to ensure a bug-free and fully
+                        functional experience.
+                        The Notes App is specifically designed for Windows platforms.
+                        </p>
+
+                        <hr class="w-50 mx-auto mb-4">
+                        <!-- ! Images -->
+                        <div class="row ">
+                            <div class="col-lg-6 text-center">
+                                <img class="img-fluid" src="../Resources/Projects Data/Notes App CSharp WPF.png" alt="">
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                <img class="img-fluid" src="../Resources/Projects Data/notes app Csharp WPF Details.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            School Library System
+                        </h3>
+                        <h5>Programming Language: C#, XAML</h5>
+                        <h5>Framework: WPF</h5>
+                        <h5>Database: MSSQL</h5>
+
+                        <a href="https://github.com/amarhany20/Toros-University-Library-System-CSHARP-WPF-MSSQL"><i
+                                class="bi bi-github text-light" style="font-size: 2em;"></i></a>
+
+                        <p class="text-justify">
+                            <br>
+                            Built with C# WPF using MSSQL as a local database. A library system for managing books
+                            with
+                            inventory and stock tracking. Roles based authorization for Students, Lecturers and
+                            Admins.
+                            Time
+                            tracking for rented books and a small notification system. Admin has the ability for
+                            role
+                            confirmation, managing stock and returned books approval.
+                        </p>
+
+
+                    </div>
+
+
+                    <hr>
+
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            School Management System
+                        </h3>
+                        <h5>Programming Language: Java</h5>
+                        <h5>Database: SQlite</h5>
+
+                        <a
+                            href="https://github.com/amarhany20/TOROS-UNIVERSITY-PROJECTS/tree/main/Java%20School%20Management%20Project/AmmarHanyEzeldinAbdelrazik195050902Java"><i
+                                class="bi bi-github text-light" style="font-size: 2em;"></i></a>
+
+                        <p class="text-justify">
+                            <br>
+                            Built with Java using SQLite as a local database. management system with course
+                            selection,
+                            exam
+                            schedule and weekly schedule. Role based authorization for students and lecturers.
+                            Lecturers
+                            can
+                            manage grades and courses, add announcements, and add their exam and weekly schedule.
+                        </p>
+
+
+                    </div>
+                    <hr>
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            Cashier System
+                        </h3>
+                        <h5>Programming Language: C#, XAML</h5>
+                        <h5>Framework: WPF</h5>
+                        <h5>Database: MSSQL</h5>
+
+                        <a href="https://github.com/amarhany20/Toros-University-Cashier-System-CSHARP-WPF"><i
+                                class="bi bi-github text-light" style="font-size: 2em;"></i></a>
+
+                        <p class="text-justify">
+                            <br>
+                            Built with C# WPF using MSSQL as a local database. a cashier system with order history
+                            and
+                            inventory system. includes an auto stock tracking system. Role based authorization for
+                            admin
+                            and
+                            cashier. admin can manage order history, manage, and hide all inventory items.
+                        </p>
+
+
+                    </div>
+                    <hr>
+                    <div class="my-project my-4">
+                        <h3 class="mb-2 gradient-text">
+                            Notes And Tasks Android App
+                        </h3>
+                        <h5>Programming Language: Java in Android Studio</h5>
+                        <h5>Database: RoomsDB on SQLite</h5>
+                        <a href="https://github.com/amarhany20/TOROS-UNIVERSITY-PROJECTS/tree/main/MyPersonalApp"><i
+                                class="bi bi-github text-light" style="font-size: 2em;"></i></a>
+
+
+
+                        <p class="text-justify">
+                            <br>
+                            Built with Android Studio using Java and RoomsDB library that is based on SQLite. It is
+                            just
+                            an
+                            app for creating, editing, deleting, and pinning Notes with a search feature available
+                            and
+                            creating, editing, deleting Tasks with marking them as done.
+                        </p>
+
+
+                    </div>
+                    <hr>
 
 
                 </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        Live Object Counter
-                    </h3>
-
-                    <!-- <a href="https://github.com/amarhany20/Teknofest-Autonomous-Harvesting-Robot-Computer-Vision-Backend"><i class="bi bi-github text-light" style="font-size: 2em;"></i></a> -->
-
-                    <p class="text-justify">
-                        <br>
-                        A Computer Vision Project made during my internship at Animals.AI. <br> I have used <span
-                            class="fw-bold  fs-6 text-decoration-underline">YOLOv8</span> to detect and <span
-                            class="fw-bold fs-6 text-decoration-underline">Supervision </span>to annotate and count the
-                        entities at each entrance and exit by connecting it to a live RTSP camera and send out the data
-                        to the cloud. <br>I have also optimized it for efficiency to be able to work on a Jetson device
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        Teknofest 2023 Contest Computer Vision Project
-                    </h3>
-
-                    <a
-                        href="https://github.com/amarhany20/Teknofest-Autonomous-Harvesting-Robot-Computer-Vision-Backend"><i
-                            class="bi bi-github text-light" style="font-size: 2em;"></i></a>
-
-                    <p class="text-justify">
-                        <br>
-                        A Computer Vision Project made in collaboration with Toros University's Smart Lab for the <span
-                            class="fw-bold  fs-6 text-decoration-underline">Teknofest Contest</span> which is one of the
-                        biggest technology contests in the world and was attended by 2.5 million visitors. The project
-                        won the 25th rank. The project was about an Autonomous Harvesting Robot which harvests fruits
-                        and vegetables from the ground. I built the computer vision model and connected it to the
-                        front-end using <span class="fw-bold  fs-6 text-decoration-underline">Flask</span>. I used <span
-                            class="fw-bold  fs-6 text-decoration-underline">Pytorch</span> library using the <span
-                            class="fw-bold  fs-6 text-decoration-underline">YOLOV8</span> Model. The programming
-                        language was Python.
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        Self-Driving Car Using Behavioural Cloning
-                    </h3>
-
-                    <a href="https://github.com/amarhany20/Private-Self-Driving-Car"><i class="bi bi-github text-light"
-                            style="font-size: 2em;"></i></a>
-
-                    <p class="text-justify">
-                        <br>
-                        A Machine Learning project built in <span
-                            class="fw-bold  fs-6 text-decoration-underline">python</span>. It is about driving a car
-                        manually to generate my dataset. Then I train my model using <span
-                            class="fw-bold  fs-6 text-decoration-underline">Deep learning and Convolutional Neural
-                            Network</span>. Using that model, the car can drive on its own without any crashes. I used
-                        <span class="fw-bold  fs-6 text-decoration-underline">Udacity</span> Car Simulation as my
-                        simulator.
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        Engineering Firm Website
-                    </h3>
-
-                    <a href="https://github.com/amarhany20/laravel-CompanyWebsiteVersion2"><i
-                            class="bi bi-github text-light" style="font-size: 2em;"></i></a>
-
-                    <p class="text-justify">
-                        <br>
-                        For showing projects linked to an engineering firm. Includes an admin area for managing all
-                        projects and other admins. Built with <span class="fw-bold fs-6 text-decoration-underline">HTML,
-                            CSS, JS, Bootstrap and PHP Laravel 9</span>
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        Real Estate Website
-                    </h3>
-
-                    <!-- <a href="github"><i class="bi bi-github text-light" style="font-size: 2em;"></i></a> -->
-
-                    <p class="text-justify">
-                        <br>
-                        SEO Friendly Multilingual Website for showing newly built buildings in UAE With objective of
-                        getting leads from buyers. Includes features like sending leads through email. Built with CMS,
-                        JavaScript, and WIX Velo
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        IStone Company Software
-                    </h3>
-
-                    <a href="https://github.com/amarhany20/IStone-Company-Management"><i class="bi bi-github text-light"
-                            style="font-size: 2em;"></i></a>
-
-                    <p class="text-justify">
-                        <br>
-                        Built with C# WPF using MSSQL as a server database. Role Based windows application for managing
-                        customers, tracking work status, inventory, and payment. Includes an authorization system for
-                        employees and managers and owner.
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        Web Crawler
-                    </h3>
-
-                    <a href="https://github.com/amarhany20/Private-Self-Driving-Car"><i class="bi bi-github text-light"
-                            style="font-size: 2em;"></i></a>
-
-                    <p class="text-justify">
-                        <br>
-                        Built with C# WPF using MSSQL with full focus on OOB programming. A robust web crawler that
-                        crawls a website and gets all the <a> anchor links from the html.
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        School Library System
-                    </h3>
-
-                    <a href="https://github.com/amarhany20/Toros-University-Library-System-CSHARP-WPF-MSSQL"><i
-                            class="bi bi-github text-light" style="font-size: 2em;"></i></a>
-
-                    <p class="text-justify">
-                        <br>
-                        Built with C# WPF using MSSQL as a local database. A library system for managing books with
-                        inventory and stock tracking. Roles based authorization for Students, Lecturers and Admins. Time
-                        tracking for rented books and a small notification system. Admin has the ability for role
-                        confirmation, managing stock and returned books approval.
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        School Management System
-                    </h3>
-
-                    <a
-                        href="https://github.com/amarhany20/TOROS-UNIVERSITY-PROJECTS/tree/main/Java%20School%20Management%20Project/AmmarHanyEzeldinAbdelrazik195050902Java"><i
-                            class="bi bi-github text-light" style="font-size: 2em;"></i></a>
-
-                    <p class="text-justify">
-                        <br>
-                        Built with Java using SQLite as a local database. management system with course selection, exam
-                        schedule and weekly schedule. Role based authorization for students and lecturers. Lecturers can
-                        manage grades and courses, add announcements, and add their exam and weekly schedule.
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        Cashier System
-                    </h3>
-
-                    <a href="https://github.com/amarhany20/Toros-University-Cashier-System-CSHARP-WPF"><i
-                            class="bi bi-github text-light" style="font-size: 2em;"></i></a>
-
-                    <p class="text-justify">
-                        <br>
-                        Built with C# WPF using MSSQL as a local database. a cashier system with order history and
-                        inventory system. includes an auto stock tracking system. Role based authorization for admin and
-                        cashier. admin can manage order history, manage, and hide all inventory items.
-                    </p>
-
-
-                </div>
-                <hr>
-                <div class="my-project my-4">
-                    <h3 class="mb-2 gradient-text">
-                        Notes And Tasks Android App
-                    </h3>
-
-                    <a href="https://github.com/amarhany20/TOROS-UNIVERSITY-PROJECTS/tree/main/MyPersonalApp"><i
-                            class="bi bi-github text-light" style="font-size: 2em;"></i></a>
-
-                    <p class="text-justify">
-                        <br>
-                        Built with Android Studio using Java and RoomsDB library that is based on SQLite. It is just an
-                        app for creating, editing, deleting, and pinning Notes with a search feature available and
-                        creating, editing, deleting Tasks with marking them as done.
-                    </p>
-
-
-                </div>
-                <hr>
-
-
             </div>
-        </div>
+        </section>
     </main>
 
-    <!-- Projects -->
-
-    <!-- Main Content -->
-
-
+    <!-- ! Projects End -->
 
     <!-- ! JS Link Start -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="../scripts/myScript.js"></script>
+
     <!-- ! JS Link End -->
+
 </body>
 <!-- ! Body End -->
 
