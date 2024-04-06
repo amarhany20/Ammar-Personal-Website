@@ -1,16 +1,5 @@
 // scripts/partialLoader.js
 
-// Function to set the Content Security Policy (CSP)
-function setContentSecurityPolicy() {
-  const cspMeta = document.createElement("meta");
-  cspMeta.httpEquiv = "Content-Security-Policy";
-  cspMeta.content = "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'";
-  document.head.appendChild(cspMeta);
-}
-
-// Set Content Security Policy
-setContentSecurityPolicy();
-
 // ! Loading Partial HTMLs in Index.html Start
 
 // Function to load partial HTML files into their respective sections
