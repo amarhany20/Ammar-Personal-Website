@@ -2,6 +2,8 @@
 
 // ! Global scripts start
 
+console.log("main.js JavaScript file loaded");
+
 // ! Global scripts end
 
 // ! index.html scripts start
@@ -12,21 +14,17 @@
 
 // ! partials/navbar.html scripts start
 
-console.log("main.js JavaScript file loaded");
-var resumeLink = document.querySelector(".resume-link");
-if (resumeLink) {
-  resumeLink.href = "./resources/resume/Ammar Hany CV 2024 Global.pdf";
-} else {
-  console.error("Resume link not found in navbar");
-}
+// Set CV link dynamically
+var cvLinks = document.querySelectorAll(".cv-link");
+cvLinks.forEach(function (link) {
+  link.href = "./resources/cv/Ammar Hany CV 2024 Global.pdf";
+});
 
-// Set Portfolio link dynamically (Update this link as needed)
-var portfolioLink = document.querySelector(".portfolio-link");
-if (portfolioLink) {
-  portfolioLink.href = "../resources/portfolio";
-} else {
-  console.error("Portfolio link not found in navbar");
-}
+// Set Portfolio link dynamically
+var portfolioLinks = document.querySelectorAll(".portfolio-link");
+portfolioLinks.forEach(function (link) {
+  link.href = "./resources/portfolio/Portfolio V1.0.pdf";
+});
 
 // Get the navbar element
 const navbar = document.querySelector(".navbar");
