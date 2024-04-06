@@ -22,13 +22,13 @@ function loadPartialHTML(url, sectionId) {
 }
 
 // Load partial HTML files into their respective sections
-loadPartialHTML("../partials/navbar.html", "navbar");
-loadPartialHTML("../partials/landing.html", "landing");
-loadPartialHTML("../partials/skills.html", "skills");
-loadPartialHTML("../partials/experience.html", "experience");
-loadPartialHTML("../partials/education.html", "education");
-loadPartialHTML("../partials/certificates.html", "certificates");
-loadPartialHTML("../partials/footer.html", "footer");
+loadPartialHTML("./partials/navbar.html", "navbar");
+loadPartialHTML("./partials/landing.html", "landing");
+loadPartialHTML("./partials/skills.html", "skills");
+loadPartialHTML("./partials/experience.html", "experience");
+loadPartialHTML("./partials/education.html", "education");
+loadPartialHTML("./partials/certificates.html", "certificates");
+loadPartialHTML("./partials/footer.html", "footer");
 
 // Load main.js after a delay
 setTimeout(() => {
