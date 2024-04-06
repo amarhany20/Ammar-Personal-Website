@@ -19,13 +19,13 @@ function loadPartialHTML(url, sectionId) {
 
 // Load all partial HTML files
 Promise.all([
-  loadPartialHTML("../partials/navbar.html", "navbar"),
-  loadPartialHTML("../partials/landing.html", "landing"),
-  loadPartialHTML("../partials/skills.html", "skills"),
-  loadPartialHTML("../partials/experience.html", "experience"),
-  loadPartialHTML("../partials/education.html", "education"),
-  loadPartialHTML("../partials/certificates.html", "certificates"),
-  loadPartialHTML("../partials/footer.html", "footer"),
+  loadPartialHTML("./partials/navbar.html", "navbar"),
+  loadPartialHTML("./partials/landing.html", "landing"),
+  loadPartialHTML("./partials/skills.html", "skills"),
+  loadPartialHTML("./partials/experience.html", "experience"),
+  loadPartialHTML("./partials/education.html", "education"),
+  loadPartialHTML("./partials/certificates.html", "certificates"),
+  loadPartialHTML("./partials/footer.html", "footer"),
 ])
   .then(() => {
     // All partial HTML files have been loaded successfully
