@@ -15,7 +15,7 @@
 console.log("main.js JavaScript file loaded");
 var resumeLink = document.querySelector(".resume-link");
 if (resumeLink) {
-  resumeLink.href = "./resources/resume/Ammar Hany CV 2024 Global V1.0.pdf";
+  resumeLink.href = "./resources/resume/Ammar Hany CV 2024 Global.pdf";
 } else {
   console.error("Resume link not found in navbar");
 }
