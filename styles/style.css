@@ -1,0 +1,128 @@
+/* styles/style.css */
+/* ! Header 1 */
+/* * Header 2 */
+/* ? Header 3 */
+
+/* ! Global styles start */
+
+/* ! Global styles end */
+
+/* ! index.html styles start */
+
+/*... end*/
+
+/* ! partials/navbar.html styles start */
+
+/* CSS for navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+}
+
+.navbar-transparent {
+  background-color: rgba(255, 255, 255, 0.7) !important; /* Transparent background color */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a soft shadow effect */
+}
+
+.navbar-scrolled {
+  transition: 0.3s;
+  top: -60px;
+}
+/* CSS for dark mode */
+body.dark-mode {
+  background-color: #212529;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s; /* Added transition for background-color and color */
+}
+
+.navbar.dark-mode {
+  background-color: #343a40 !important;
+  color: #fff;
+}
+
+/* Adjust text color for navbar links and brand */
+.navbar.dark-mode .nav-link {
+  color: rgba(255, 255, 255, 0.7); /* Adjust color for navbar links */
+}
+
+.navbar.dark-mode .navbar-brand {
+  color: #fff; /* Adjust color for navbar brand */
+}
+
+/*
+/* CSS for light mode * /
+body.light-mode {
+  background-color: #fff;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s; /* Added transition for background-color and color * /
+}
+
+.navbar.light-mode {
+  background-color: #f8f9fa !important;
+  color: #212529;
+}
+
+/* Adjust text color for navbar links and brand * /
+.navbar.light-mode .nav-link {
+  color: rgba(0, 0, 0, 0.7); /* Adjust color for navbar links * /
+}
+
+.navbar.light-mode .navbar-brand {
+  color: #212529; /* Adjust color for navbar brand * /
+}
+
+/* Hide moon icon and sun icon with smooth transition * /
+.bi-moon,
+.bi-brightness-high {
+  transition: opacity 0.3s; /* Added transition for opacity * /
+}
+
+.bi-moon.d-none,
+.bi-brightness-high.d-none {
+  opacity: 0;
+}
+*/
+/* ! partials/navbar.html styles end */
+
+/* ! partials/landing.html styles start */
+
+.personal-photo {
+  width: 50%;
+  border-radius: 50%;
+}
+
+/* ! partials/landing.html styles end */
+
+/* ! partials/skills.html styles start */
+
+/*...*/
+
+/* ! partials/skills.html styles end */
+
+/* ! partials/experience.html styles start */
+
+/*...*/
+
+/* ! partials/experience.html styles end */
+
+/* ! partials/education.html styles start */
+
+/*...*/
+
+/* ! partials/education.html styles end */
+
+/* ! partials/certificates.html styles start */
+
+/*...*/
+
+/* ! partials/certificates.html styles end */
+
+/* ! partials/footer.html styles start */
+
+/*...*/
+
+/* ! partials/footer.html styles end */
