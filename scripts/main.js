@@ -17,13 +17,13 @@ console.log("main.js JavaScript file loaded");
 // Set CV link dynamically
 var cvLinks = document.querySelectorAll(".cv-link");
 cvLinks.forEach(function (link) {
-  link.href = "./resources/cv/Ammar Hany CV 2024 Global.pdf";
+  link.href = "./resources/cv/Ammar Hany Generic CV 2024.pdf";
 });
 
 // Set Portfolio link dynamically
 var portfolioLinks = document.querySelectorAll(".portfolio-link");
 portfolioLinks.forEach(function (link) {
-  link.href = "./resources/portfolio/Portfolio V1.0.pdf";
+  link.href = "./resources/portfolio/Portfolio V1.1.pdf";
 });
 
 // Get the navbar element
@@ -170,6 +170,16 @@ if (udemySelfDrivingCarLink) {
 }
 
 // ! partials/certificates.html scripts end
+
+// ! partials/recommendation.html scripts start
+
+// Set recommendation link dynamically
+var recommendationLink = document.querySelector(".recommendation-link");
+if (recommendationLink) {
+  recommendationLink.href = "./resources/recommendations/Animals.ai Ammar - Yuan signed.pdf";
+}
+
+// ! partials/recommendation.html scripts end
 
 // ! partials/footer.html scripts start
 
