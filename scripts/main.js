@@ -167,6 +167,13 @@ if (teknofestLink) {
 var udemySelfDrivingCarLink = document.querySelector(".udemy-selfDrivingCar-certificate");
 if (udemySelfDrivingCarLink) {
   udemySelfDrivingCarLink.href = "./resources/certificates/Self-Driving Car Certificate UC-b28c626f-132b-4ff3-bea9-89e33052f24a.pdf";
+  udemySelfDrivingCarLink.href = "https://ude.my/UC-b28c626f-132b-4ff3-bea9-89e33052f24a";
+}
+
+var udemyPythonBootcamp = document.querySelector(".udemy-PythonBootcamp-certificate");
+if (udemyPythonBootcamp) {
+  udemyPythonBootcamp.href = "./resources/certificates/Python Course - UC-9615c4dd-a278-45ab-800f-78eeb80e5e66.pdf";
+  udemyPythonBootcamp.href = "https://ude.my/UC-9615c4dd-a278-45ab-800f-78eeb80e5e66/";
 }
 
 // ! partials/certificates.html scripts end
