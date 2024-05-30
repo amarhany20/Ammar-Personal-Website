@@ -145,10 +145,9 @@ if (udemyPythonBootcamp) {
 // ! partials/recommendation.html scripts start
 
 // Set recommendation link dynamically
-var recommendationLinkClass = ".animalsai-recommendation-link";
-var recommendationLink = document.querySelector(recommendationLinkClass);
+var recommendationLink = document.querySelector(".animalsai-recommendation-link");
 if (recommendationLink) {
-  recommendationLink.href = "./redirector.html?class=" + encodeURIComponent(recommendationLinkClass);
+  recommendationLink.href = "./redirector.html?class=" + encodeURIComponent(recommendationLink.className);
 }
 
 // ! partials/recommendation.html scripts end
