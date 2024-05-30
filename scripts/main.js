@@ -155,8 +155,92 @@ if (recommendationLink) {
 
 // ! partials/recommendation.html scripts end
 
-// ! partials/footer.html scripts start
+// ! partials/personal-projects.html scripts start
 
 //...
+
+// ! partials/personal-projects.html scripts end
+
+// ! partials/footer.html scripts start
+
+// ! partials/personal-projects.html scripts start
+
+// Connect 4 Game
+var connect4Link = document.querySelector(".connect-4-link");
+if (connect4Link) {
+  connect4Link.href = "https://github.com/amarhany20/Jquery-Connect-4-Game";
+}
+
+var connect4Link = document.querySelector(".connect-4-test-link");
+if (connect4Link) {
+  connect4Link.href = "https://amarhany20.github.io/Jquery-Connect-4-Game/";
+}
+
+// Forums Web Application
+var forumsWebAppLink = document.querySelector(".forums-web-app-link");
+if (forumsWebAppLink) {
+  forumsWebAppLink.href = "https://github.com/amarhany20/Toros-University-ASP.NET-MVC-FORUMS-APP";
+}
+
+// Self-Driving Car Using Behavioral Cloning
+var selfDrivingCarLink = document.querySelector(".self-driving-car-link");
+if (selfDrivingCarLink) {
+  selfDrivingCarLink.href = "https://github.com/amarhany20/Private-Self-Driving-Car";
+}
+
+// Engineering Firm Website
+var engineeringFirmLink = document.querySelector(".engineering-firm-link");
+if (engineeringFirmLink) {
+  engineeringFirmLink.href = "https://github.com/amarhany20/laravel-CompanyWebsiteVersion2";
+}
+// Engineering Firm Website
+var engineeringFirmLink = document.querySelector(".engineering-firm-2-link");
+if (engineeringFirmLink) {
+  engineeringFirmLink.href = "https://github.com/amarhany20/laravel-CompanyWebsiteVersion1--Version2InProgress";
+}
+
+// Company Management App
+var companyManagementLink = document.querySelector(".company-management-link");
+if (companyManagementLink) {
+  companyManagementLink.href = "https://github.com/amarhany20/IStone-Company-Management";
+}
+
+// Inventory System
+var inventorySystemLink = document.querySelector(".inventory-system-link");
+if (inventorySystemLink) {
+  inventorySystemLink.href = "https://github.com/amarhany20/Personal-CSharp-WPF-InventorySystem";
+}
+
+// Robust Multithreaded Web Crawler
+var webCrawlerLink = document.querySelector(".web-crawler-link");
+if (webCrawlerLink) {
+  webCrawlerLink.href = "https://github.com/amarhany20/Toros-University-WebCrawler-CSHARP-WPF-MSSQL";
+}
+
+// Windows Notes App
+var windowsNotesLink = document.querySelector(".windows-notes-link");
+if (windowsNotesLink) {
+  windowsNotesLink.href = "https://github.com/amarhany20/csharp_wpf_notesapp";
+}
+
+// School Library System
+var librarySystemLink = document.querySelector(".library-system-link");
+if (librarySystemLink) {
+  librarySystemLink.href = "https://github.com/amarhany20/Toros-University-Library-System-CSHARP-WPF-MSSQL";
+}
+
+// School Management System
+var managementSystemLink = document.querySelector(".management-system-link");
+if (managementSystemLink) {
+  managementSystemLink.href = "https://github.com/amarhany20/TOROS-UNIVERSITY-PROJECTS/tree/main/Java%20School%20Management%20Project/AmmarHanyEzeldinAbdelrazik195050902Java/SchoolManagementSystem";
+}
+
+// Cashier System
+var cashierSystemLink = document.querySelector(".cashier-system-link");
+if (cashierSystemLink) {
+  cashierSystemLink.href = "https://github.com/amarhany20/Toros-University-Cashier-System-CSHARP-WPF";
+}
+
+// ! partials/personal-projects.html scripts end
 
 // ! partials/footer.html scripts end

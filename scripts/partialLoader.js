@@ -21,11 +21,12 @@ function loadPartialHTML(url, sectionId) {
 Promise.all([
   loadPartialHTML("./partials/navbar.html", "navbar"),
   loadPartialHTML("./partials/landing.html", "landing"),
-  loadPartialHTML("./partials/skills.html", "skills"),
   loadPartialHTML("./partials/experience.html", "experience"),
   loadPartialHTML("./partials/education.html", "education"),
   loadPartialHTML("./partials/certificates.html", "certificates"),
   loadPartialHTML("./partials/recommendations.html", "recommendations"), // Load recommendations.html
+  loadPartialHTML("./partials/skills.html", "skills"),
+  loadPartialHTML("./partials/personal-projects.html", "personal-projects"),
   loadPartialHTML("./partials/footer.html", "footer"),
 ])
   .then(() => {
