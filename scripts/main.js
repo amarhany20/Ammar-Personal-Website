@@ -17,13 +17,13 @@ console.log("main.js JavaScript file loaded");
 // Set CV link dynamically
 var cvLinks = document.querySelectorAll(".cv-link");
 cvLinks.forEach(function (link) {
-  link.href = "./resources/cv/Ammar Hany Generic CV 2024.pdf";
+  link.href = "./redirector.html?class=" + encodeURIComponent(link.classList[0]);
 });
 
 // Set Portfolio link dynamically
 var portfolioLinks = document.querySelectorAll(".portfolio-link");
 portfolioLinks.forEach(function (link) {
-  link.href = "./resources/portfolio/Portfolio.pdf";
+  link.href = "./redirector.html?class=" + encodeURIComponent(link.classList[0]);
 });
 
 // Get the navbar element
@@ -61,40 +61,6 @@ navLinks.forEach((link) => {
     navbarCollapse.classList.remove("show");
   });
 });
-// const darkLightModeToggle = document.querySelector(".btn-dark-light-mode-toggle");
-// const moonIcon = darkLightModeToggle.querySelector(".bi-moon");
-// const sunIcon = darkLightModeToggle.querySelector(".bi-brightness-high");
-
-// darkLightModeToggle.addEventListener("click", () => {
-//   const isDarkMode = document.body.classList.toggle("dark-mode");
-//   localStorage.setItem("darkMode", isDarkMode);
-//   // Toggle moon and sun icons based on dark mode state
-//   moonIcon.classList.toggle("d-none", isDarkMode);
-//   sunIcon.classList.toggle("d-none", !isDarkMode);
-//   // Update navbar colors for dark mode
-//   navbar.classList.toggle("dark-mode", isDarkMode);
-//   // Update nav link colors for dark mode
-//   navLinks.forEach((link) => {
-//     link.classList.toggle("dark-mode", isDarkMode);
-//   });
-//   // Update table colors for dark mode (if applicable)
-//   const table = document.querySelector("table");
-//   if (table) {
-//     table.classList.toggle("table-dark", isDarkMode);
-//   }
-// });
-
-// // Automatically detect and set theme mode based on device's preference
-// const darkModePreferred = window.matchMedia("(prefers-color-scheme: dark)").matches;
-// if (darkModePreferred) {
-//   document.body.classList.add("dark-mode");
-//   localStorage.setItem("darkMode", true);
-//   moonIcon.classList.add("d-none"); // Hide moon icon
-// } else {
-//   document.body.classList.remove("dark-mode");
-//   localStorage.setItem("darkMode", false);
-//   sunIcon.classList.add("d-none"); // Hide sun icon
-// }
 
 // ! partials/navbar.html scripts end
 
@@ -153,15 +119,17 @@ if (swedenWhatsappLink) {
 
 // ! partials/certificates.html scripts start
 
-// Set certificate links
-var internshipAnimalsaiLink = document.querySelector(".internship-animalsai-certificate");
+// Set certificate links dynamically
+var internshipAnimalsaiLinkClass = ".internship-animalsai-certificate";
+var internshipAnimalsaiLink = document.querySelector(internshipAnimalsaiLinkClass);
 if (internshipAnimalsaiLink) {
-  internshipAnimalsaiLink.href = "./resources/certificates/2023-10 Animals.ai Internship Certificate.pdf";
+  internshipAnimalsaiLink.href = "./redirector.html?class=" + encodeURIComponent(internshipAnimalsaiLinkClass);
 }
 
-var teknofestLink = document.querySelector(".tekonfeset-certificate");
+var teknofestLinkClass = ".tekonfeset-certificate";
+var teknofestLink = document.querySelector(teknofestLinkClass);
 if (teknofestLink) {
-  teknofestLink.href = "./resources/certificates/Ammar Teknofest Certificate.pdf";
+  teknofestLink.href = "./redirector.html?class=" + encodeURIComponent(teknofestLinkClass);
 }
 
 var udemySelfDrivingCarLink = document.querySelector(".udemy-selfDrivingCar-certificate");
@@ -179,9 +147,10 @@ if (udemyPythonBootcamp) {
 // ! partials/recommendation.html scripts start
 
 // Set recommendation link dynamically
-var recommendationLink = document.querySelector(".recommendation-link");
+var recommendationLinkClass = ".animalsai-recommendation-link";
+var recommendationLink = document.querySelector(recommendationLinkClass);
 if (recommendationLink) {
-  recommendationLink.href = "./resources/recommendations/Animals.ai Ammar - Yuan signed.pdf";
+  recommendationLink.href = "./redirector.html?class=" + encodeURIComponent(recommendationLinkClass);
 }
 
 // ! partials/recommendation.html scripts end

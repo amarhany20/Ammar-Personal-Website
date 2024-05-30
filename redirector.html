@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirector</title>
+    <script>
+        // Function to extract class name from URL and redirect
+        function redirectToClass() {
+            // Get the URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            // Get the class name parameter
+            const className = urlParams.get('class');
+            // Check if class name is not null or empty
+            if (className) {
+                // Construct the redirect URL based on the class name
+                let redirectURL;
+                switch (className) {
+                    case "internship-animalsai-certificate":
+                        redirectURL = "https://drive.google.com/file/d/1gCe8T640p4jD2krvHLyGcRwIWXiAFRG1/view?usp=sharing";
+                        break;
+                    case "tekonfeset-certificate":
+                        redirectURL = "https://drive.google.com/file/d/1lPaSOvpUO4uVeMGSikC1Hd3SyP7ROXHk/view?usp=sharing";
+                        break;
+                    case "animalsai-recommendation-link":
+                        redirectURL = "https://drive.google.com/file/d/1kUhh1r5_0Xut0uPo1HXdNqBQJO0XeiUd/view?usp=sharing";
+                        break;
+                    case "portfolio-link":
+                        redirectURL = "https://drive.google.com/file/d/1z0KL7oGPihJ-XXYxqvPZRovsXaF5dmPS/view?usp=sharing";
+                        break;
+                    case "cv-link":
+                        redirectURL = "https://drive.google.com/file/d/1qIbvwFv4aZqfwB9XZlfJ6FQDfpTxXHLj/view?usp=sharing";
+                        break;
+                    default:
+                        // If class name does not match any case, show error message
+                        alert('Invalid class name parameter in the URL!');
+                        return;
+                }
+                // Redirect to the class page
+                window.location.href = redirectURL;
+            } else {
+                // If class name parameter is missing, show error message
+                alert('Class name parameter is missing in the URL!');
+            }
+        }
+        // Call the redirect function when the page loads
+        window.onload = redirectToClass;
+    </script>
+</head>
+
+<body>
+    <h1>Redirecting...</h1>
+</body>
+
+</html>
