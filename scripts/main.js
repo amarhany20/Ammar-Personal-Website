@@ -120,16 +120,14 @@ if (swedenWhatsappLink) {
 // ! partials/certificates.html scripts start
 
 // Set certificate links dynamically
-var internshipAnimalsaiLinkClass = ".internship-animalsai-certificate";
-var internshipAnimalsaiLink = document.querySelector(internshipAnimalsaiLinkClass);
+var internshipAnimalsaiLink = document.querySelector(".internship-animalsai-certificate");
 if (internshipAnimalsaiLink) {
-  internshipAnimalsaiLink.href = "./redirector.html?class=" + encodeURIComponent(internshipAnimalsaiLinkClass);
+  internshipAnimalsaiLink.href = "./redirector.html?class=" + encodeURIComponent(internshipAnimalsaiLink.className);
 }
 
-var teknofestLinkClass = ".tekonfeset-certificate";
-var teknofestLink = document.querySelector(teknofestLinkClass);
+var teknofestLink = document.querySelector(".tekonfeset-certificate");
 if (teknofestLink) {
-  teknofestLink.href = "./redirector.html?class=" + encodeURIComponent(teknofestLinkClass);
+  teknofestLink.href = "./redirector.html?class=" + encodeURIComponent(teknofestLink.className);
 }
 
 var udemySelfDrivingCarLink = document.querySelector(".udemy-selfDrivingCar-certificate");
