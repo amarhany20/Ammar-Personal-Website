@@ -26,7 +26,7 @@ Promise.all([
   loadPartialHTML("./partials/certificates.html", "certificates"),
   loadPartialHTML("./partials/recommendations.html", "recommendations"), // Load recommendations.html
   loadPartialHTML("./partials/skills.html", "skills"),
-  loadPartialHTML("./partials/personal-projects.html", "personal-projects"),
+  loadPartialHTML("./partials/projects.html", "projects"),
   loadPartialHTML("./partials/footer.html", "footer"),
 ])
   .then(() => {
