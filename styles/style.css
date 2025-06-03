@@ -53,12 +53,11 @@ body.dark-mode {
   color: #fff; /* Adjust color for navbar brand */
 }
 
-/*
-/* CSS for light mode * /
+/* CSS for light mode */
 body.light-mode {
   background-color: #fff;
   color: #212529;
-  transition: background-color 0.3s, color 0.3s; /* Added transition for background-color and color * /
+  transition: background-color 0.3s, color 0.3s; /* Added transition for background-color and color */
 }
 
 .navbar.light-mode {
@@ -66,26 +65,26 @@ body.light-mode {
   color: #212529;
 }
 
-/* Adjust text color for navbar links and brand * /
+
 .navbar.light-mode .nav-link {
-  color: rgba(0, 0, 0, 0.7); /* Adjust color for navbar links * /
+  color: rgba(0, 0, 0, 0.7); /* Adjust color for navbar links */
 }
 
 .navbar.light-mode .navbar-brand {
-  color: #212529; /* Adjust color for navbar brand * /
+  color: #212529; /* Adjust color for navbar brand */
 }
 
-/* Hide moon icon and sun icon with smooth transition * /
+/* Hide moon icon and sun icon with smooth transition */
+
 .bi-moon,
 .bi-brightness-high {
-  transition: opacity 0.3s; /* Added transition for opacity * /
+  transition: opacity 0.3s; /* Added transition for opacity */
 }
 
 .bi-moon.d-none,
 .bi-brightness-high.d-none {
   opacity: 0;
 }
-*/
 /* ! partials/navbar.html styles end */
 
 /* ! partials/landing.html styles start */
